@@ -1,5 +1,7 @@
 .navbar-dark .navbar-nav .nav-link {
-    color: black;
+    color: #038C3E;
+    font-family: 'Lobster', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -9,12 +11,10 @@
 }
 
 .fondo-nav{
-    background-color: white;
+    background-color: #F2F2F2;
 }
-
-.letras-nav{
-    color: #Ffffff;
-}
+/* Fin de Nav */
+/* Jumbotron Start */
 
 .jumbotron{
     background-image: url(/images/banner-3.jpg);
@@ -22,21 +22,39 @@
     background-position: center;
     height: 600px;
     color: black;
-    text-shadow: 0px 1px  black;
+    text-shadow: 0px 1px  #A0AFA0;
     border-radius: 0;
     margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+.jumbotron h1{
+    font-weight: bolder;
 }
 
 .jumbotron p{
     font-size: 30px;
 }
+.slide-right{-webkit-animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) forwards;animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) forwards}
+@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}@keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}
+
 h2 {
     text-align: center;
-    background-color: black;
+    background-color: #78BF97;
     color: white;
     padding: 20px;
     margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+    font-family: 'Rubik', sans-serif;
 }
+
+.jumbotron .btn-outline-success{
+    background-color: #038C3E;
+    color:rgba(255, 255, 255, 0.918);
+    border-color: white;
+
+}
+/* Nosotros Start */
 
 .nosotros {
     height: 500px;
@@ -48,13 +66,25 @@ h2 {
 h3{
     padding: 10px;
 }
-
+/* Nosotros END */
 /* Productos */
-
-img:hover{
-    transform: scale(1.2);
-
+.card img{
+    height: 300px;
+    width: 200px;
+    align-self: center;
 }
+
+.card img:hover{
+    transform: scale(1.2);
+    transition: all 2s;
+}
+
+.card-body .btn{
+    background-color: #038C3E;
+    border: white solid;
+    border-radius: 20px;
+}
+
 /*FOOTER*/
 
 footer{
