@@ -13,6 +13,21 @@ $color5: #fff;
 
 /*NAV START*/
 
+* {
+    margin:0px;
+    padding: opx;
+
+}
+
+.navbar-toggler-icon {
+    color: $color2;
+}
+.navbar-dark .navbar-toggler {
+    color: $color2;
+    background-color: $color2;
+    border-color: $color2;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: $color2;
     font-family: $font4;
@@ -25,7 +40,17 @@ $color5: #fff;
 }
 
 .fondo-nav{
-    background-color: #F2F2F2;
+    background-color: $color5;
+    width: 100%;
+}
+
+.nav-link {
+    padding: 15px;
+    
+}
+
+.navbar {
+    display: flex;
 }
 /* END NAV */
 /* JUMBOTRON START */
@@ -208,12 +233,13 @@ h2 {
     width: 100%;
 }
 
-.nosotros {
+.nosotros2 {
     height: 500px;
     width: 100%;
     background-color: white;
     text-align: center;
     font-family: $font4;
+    margin-bottom: 200px;
 }
 
 .quienesomos {
@@ -225,8 +251,9 @@ h2 {
     border-width: 1px;
     border-style: Solid;
     margin: 0px 5px; 
-    width:500px;
-    height:400px;
+    width:400px;
+    height:300px;
+    margin-bottom: 2000px;
 }
 
 .FrenteJMR:hover{

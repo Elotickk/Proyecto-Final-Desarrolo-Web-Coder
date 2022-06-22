@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&family=Poppins&family=Roboto+Condensed:wght@300;400&display=swap");
 /*PaLeta de Colores */
 /*NAV START*/
+* {
+  margin: 0px;
+  padding: opx; }
+
+.navbar-toggler-icon {
+  color: #038C3E; }
+
+.navbar-dark .navbar-toggler {
+  color: #038C3E;
+  background-color: #038C3E;
+  border-color: #038C3E; }
+
 .navbar-dark .navbar-nav .nav-link {
   color: #038C3E;
   font-family: "Poppins", sans-serif; }
@@ -11,7 +23,14 @@
   border-radius: 10px; }
 
 .fondo-nav {
-  background-color: #F2F2F2; }
+  background-color: #fff;
+  width: 100%; }
+
+.nav-link {
+  padding: 15px; }
+
+.navbar {
+  display: flex; }
 
 /* END NAV */
 /* JUMBOTRON START */
@@ -161,12 +180,13 @@ h2 {
   font-family: "Poppins", sans-serif;
   width: 100%; }
 
-.nosotros {
+.nosotros2 {
   height: 500px;
   width: 100%;
   background-color: white;
   text-align: center;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 200px; }
 
 .quienesomos {
   padding: 10px;
@@ -176,8 +196,9 @@ h2 {
   border-width: 1px;
   border-style: Solid;
   margin: 0px 5px;
-  width: 500px;
-  height: 400px; }
+  width: 400px;
+  height: 300px;
+  margin-bottom: 2000px; }
 
 .FrenteJMR:hover {
   transform: scale(1.1);
