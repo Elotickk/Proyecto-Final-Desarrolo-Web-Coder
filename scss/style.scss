@@ -11,6 +11,8 @@ $color3: #000;
 $color4: #808080;
 $color5: #fff;
 
+
+
 /*NAV START*/
 
 * {
@@ -87,22 +89,38 @@ $color5: #fff;
 
 }
 // JUMBOTRON END
-// Pagos Start
-.pagos{
-    display: flex;
-    justify-content: center;
-    background-color: $color5;
-    height: 100px;
+
+// Pagos START//
+$mapa1: (
+    // Mapa //
+    20px: green,
+    30px: lime,
+    50px: lightgreen,
+);
+
+@each $sizes,$colores in $mapa1 {
+    .maps-#{$colores} {
+        background-color: #fff;
+        height: 200px;
+        width: 500px;
+        border: 5px solid $colores;
+        text-align: center;
+        font-size: $sizes;
+        line-height: 200px;
+        color: black;
+        text-transform: uppercase;
+        text-shadow: 1 2 10px orange;
+        font-family: $font4;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-.pagos h4{
-    margin: 35px;
-}
-
-.pagos i{
-    font-size: 70px;
-    margin-top: 20px;
-    color: $color3;
+.info {
+    font-size: 40px;
+    margin-left: 20px;
+    color: $color2;
 }
 // Pagos END
 
@@ -119,10 +137,14 @@ $color5: #fff;
     align-self: center;
 }
 
+@mixin productos ($height, $width, $align-self) {
+    height: $height;
+    width: $width;
+    align-self: $align-self;
+}
+
 .card img{
-    height: 300px;
-    width: 200px;
-    align-self: center;
+    @include productos(300px, 200px, center);
 }
 
 .card img:hover{
@@ -146,7 +168,9 @@ $color5: #fff;
 // PRODUCTOS END
 /*FOOTER START*/
 
+
 footer{
+    @extend .container__footer;
     width: 100%;
     padding: 50px 0px;
     font-family: 'Nunito', sans-serif;
