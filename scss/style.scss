@@ -20,6 +20,10 @@ $color5: #fff;
     padding: opx;
 
 }
+.container-fluid{
+    width: 100%;
+    position: relative;
+}
 
 .navbar-toggler-icon {
     color: $color2;
@@ -37,7 +41,7 @@ $color5: #fff;
 
 .navbar-dark .navbar-nav .nav-link:hover{
     color: white;
-    background-color: #2a8653;
+    background-color: $color3;
     border-radius: 10px;
 }
 
@@ -48,13 +52,29 @@ $color5: #fff;
 
 .nav-link {
     padding: 15px;
-    
 }
 
 .navbar {
     display: flex;
 }
+
+@media screen and (max-width:996px) {
+    .nav-link{
+        text-align: center;
+        background-color: $color2;
+        width: 100%;
+        border-radius: 20px;
+        border: solid $color5 3px;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link{
+        color: $color5;
+        font-family: $font4;
+    }
+}
+
 /* END NAV */
+
 /* JUMBOTRON START */
 
 .jumbotron{
@@ -66,6 +86,7 @@ $color5: #fff;
     text-shadow: 0px 1px  #A0AFA0;
     border-radius: 0;
     margin-bottom: 0;
+    width: 100%;
 
     h1{
     font-weight: bolder;
@@ -89,52 +110,61 @@ $color5: #fff;
 
 }
 // JUMBOTRON END
-
-// Pagos START//
-$mapa1: (
-    // Mapa //
-    20px: green,
-    30px: lime,
-    50px: lightgreen,
-);
-
-@each $sizes,$colores in $mapa1 {
-    .maps-#{$colores} {
-        background-color: #fff;
-        height: 200px;
-        width: 500px;
-        border: 5px solid $colores;
-        text-align: center;
-        font-size: $sizes;
-        line-height: 200px;
-        color: black;
-        text-transform: uppercase;
-        text-shadow: 1 2 10px orange;
-        font-family: $font4;
-        border-radius: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+// Informacion
+.informacion {
+    width: 100%;
+    height: 175px;
+    background-color: $color5;
 }
-
 .info {
-    font-size: 40px;
-    margin-left: 20px;
-    color: $color2;
+    display: flex;
+    justify-content: space-around;
 }
-// Pagos END
 
+.info-items{
+    border: solid $color3;
+    display: flex;
+    width: 50px;
+    height: 140px;
+    border: 2px solid $color1;
+    margin-top: 10px;
+    border-radius: 50px;
+    justify-content: center;
+    background-color: $color5;
+}
+
+.a-info{
+    text-align: center;
+    color: $color2;
+    font-family: $font2;
+    font-size: 25px;
+}
+
+.a-info:hover{
+    list-style: none;
+    text-decoration: none;
+    color: $color3;
+}
+.iconinfo{
+    font-size: 50px;
+    margin-top: 5px;
+}
+// INFORMACION END///
 /* Productos START */
 
-@media screen and (max-width:986px) {
-    .pagos{
-        font-size: 10px;
+
+@media screen and (max-width:767px) {
+    .productoh2{
+        margin-top: 300px;
+    }
+    .a-info{
+        font-size: 15px;
     }
 }
 
-
 .container-fluid {
-    align-self: center;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 @mixin productos ($height, $width, $align-self) {
@@ -153,9 +183,13 @@ $mapa1: (
 }
 
 .card-body .btn{
-    background-color: $color3;
+    background-color: $color1;
     border: $color5 solid;
     border-radius: 20px;
+}
+
+.card-body .btn:hover{
+    background-color: $color2;
 }
 
 @media screen and(max-width: 762px){
@@ -166,11 +200,173 @@ $mapa1: (
     
 }
 // PRODUCTOS END
+/* Nosotros Start */
+.productoh2 {
+    text-align: center;
+    background-color: $color2;
+    color: $color5;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: $font2;
+    width: 100%;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    background-color: $color2;
+    color: $color5;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: $font2;
+    width: 100%;
+    font-size: 40px;
+}
+
+.nosotros2 {
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: $font4;
+    padding: 50px;
+}
+
+.quienesomos {
+    padding: 10px;
+    font-family: $font1;
+}
+
+.texto{
+    font-family: $font2;
+    padding: 10px;
+}
+
+.FrenteJMR{
+    border-width: 1px;
+    border-style: Solid;
+    margin: 0px 5px; 
+    width:300px;
+    height:300px;
+}
+
+.FrenteJMR:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
+@media (max-width:695px) {
+    .nosotros{
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width:453px) {
+    .nosotros{
+        margin-bottom: 500px;
+    }
+}
+/* Nosotros END */
+
+/*CONTACTO.HTML START*/
+
+.contacto {
+    background: $color1;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    border-radius: 10px;
+    min-width: auto;
+    float: left;
+    margin-left: 50px;
+}
+
+.footer-h2 {
+    color: $color5;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background-color: $color1;
+    font-family: $font4;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100%;
+    max-height: 100px;
+    max-width: 100%;
+}
+
+#boton {
+    background: $color4;
+    color: $color5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    background: $color2;
+}
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+    .contacto{
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+.col-md-4{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: right;
+}
+
+.contactame{
+    background-color: $color1;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.item-contacto{
+    list-style: none;
+    color: $color5;
+    font-size: 20px;
+}
+
+.list-contacto{
+    list-style: none;
+    color: $color5;
+    text-decoration: none;
+}
+
+.item-contacto:hover{
+    color: $color2;
+    text-decoration: none;
+}
+
+
+/*CONTACTO END*/
+
 /*FOOTER START*/
 
 
 footer{
-    @extend .container__footer;
     width: 100%;
     padding: 50px 0px;
     font-family: 'Nunito', sans-serif;
@@ -245,97 +441,3 @@ footer{
 }
 
 // FOOTER END //
-
-/* Nosotros Start */
-h2 {
-    text-align: center;
-    background-color: $color1;
-    color: $color5;
-    padding: 20px;
-    margin-bottom: 0;
-    font-family: $font4;
-    width: 100%;
-}
-
-.nosotros2 {
-    height: 500px;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    font-family: $font4;
-    margin-bottom: 200px;
-}
-
-.quienesomos {
-    padding: 10px;
-    font-family: $font1;
-}
-
-.FrenteJMR{
-    border-width: 1px;
-    border-style: Solid;
-    margin: 0px 5px; 
-    width:400px;
-    height:300px;
-}
-
-.FrenteJMR:hover{
-    transform: scale(1.1);
-    transition: all 2s;
-}
-/* Nosotros END */
-
-/*CONTACTO.HTML START*/
-
-.contacto {
-    background: $color1;
-    width: 500px;
-    margin: auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 100px;
-    border-radius: 7px;
-}
-
-.footer-h2 {
-    color: $color5;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 30px;
-    background-color: $color1;
-    font-family: $font4;
-}
-input, textarea{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-}
-
-textarea {
-    min-height: 100%;
-    max-height: 100px;
-    max-width: 100%;
-}
-
-#boton {
-    background: $color4;
-    color: $color5;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-#boton:hover {
-    cursor: pointer;
-    background: $color2;
-}
-@media (max-width:480px) {
-    form{
-        width: 100%;
-    }
-}
-
-/*CONTACTO END*/
