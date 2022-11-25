@@ -6,7 +6,7 @@ Proyecto para el curso de Desarrollo Web en Coderhouse
 
 ## ¿De que se trata mi proyecto? 🚀
   
-CTA GAMING es una tienda electronica ficticia situado en la provincia de San Fernando del Valle de Catamarca, mi idea principal fue hacer un ecommerce para poder efectuar la compra de productos.
+JMR Marroquineria es un comercio de marroquineria donde venden carteras,cintos,carteras,morrales, etc.En esta pagina lo que hice es una presentacion del comercio,mostrando algunos,una pagina con un nosotros, y formulario para que se puedan "contactar".El negocio es real es de mi madre y me inspire en su negocio para practicar en mi primera pagina web que hice!
 
 ![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/Elotickk/Proyecto-Final-Desarrolo-Web-Coder/master/./images/banner.png)
 ![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/Elotickk/Proyecto-Final-Desarrolo-Web-Coder/master/./images/banner2.png)
