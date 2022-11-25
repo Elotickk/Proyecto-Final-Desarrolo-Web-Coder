@@ -8,7 +8,8 @@ Proyecto para el curso de Desarrollo Web en Coderhouse
   
 CTA GAMING es una tienda electronica ficticia situado en la provincia de San Fernando del Valle de Catamarca, mi idea principal fue hacer un ecommerce para poder efectuar la compra de productos.
 
-![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/Elotickk/ProyectoCoderJavascript/master/./img/banner.png)
+![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/Elotickk/Proyecto-Final-Desarrolo-Web-Coder/master/./img/banner.png)
+![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/Elotickk/Proyecto-Final-Desarrolo-Web-Coder/master/./img/banner2.png)
  
 ## Tecnologias Utilizadas ⚙️
   
